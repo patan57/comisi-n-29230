@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximos conciertos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--comienzan fechas-->
+    <div>
+        <h2 class="fondo">Próximos conciertos</h2>
+        <table border="2" cellpadding="30">
+            <tr>
+                <th>Fecha</th>
+                <th>Horario</th>
+                <th>Lugar</th>
+                <th>Capacidad</th>
+            </tr>
+            <tr>
+                <td>9 de abril</td>
+                <td>22 hs</td>
+                <td>La Pana Rock, La Boca</td>
+                <td>350 personas</td>
+            </tr>
+            <tr>
+                <td>5 de Junio</td>
+                <td>22 hs</td>
+                <td>Todo Rock, Moreno</td>
+                <td>250 personas</td>
+            </tr>
+            <tr>
+                <td>18 de julio</td>
+                <td>00 hs</td>
+                <td>Planeta Rock, Munro</td>
+                <td>450 personas</td>
+            </tr>
+            <tr>
+                <td>15 de septiembre</td>
+                <td>21 hs</td>
+                <td>La Curva, Boulogne</td>
+                <td>100 personas</td>
+            </tr>
+            <tr>
+                <td>1 de octubre</td>
+                <td>01 hs</td>
+                <td>Bar Isidro, San Isidro</td>
+                <td>300 personas</td>
+            </tr> 
+        </table>
+    </div>
+    <!--terminan fechas-->
+    <!--newsletter y redes. inicio-->
+    <div>
+        <h3>Enterate las novedades antes que nadie</h3>
+        <form action="enviar.xlsx" method="post">
+            <fieldset>
+                <label for="">nombre</label>
+                <input type="text" required placeholder="escribe tu nombre"><br>
+                <label for="">apellido</label>
+                <input type="text" required placeholder="escribe tu apellido"><br>
+                <label for="">correo</label>
+                <input type="mail" required name="correo" placeholder="escribe tu apellido"><br>
+                <label for="">teléfono</label>
+                <input type="number" placeholder="escribe tu teléfono"><br>
+                <textarea name="comentarios" id="comentarios" cols="40" rows="5"></textarea><br>
+                <input type="checkbox" required name="" id="">
+                <label for="">acepta los términos y condiciones</label><br>
+                <input type="submit" name="" id="">
+                <input type="reset" name="" id="">
+            </fieldset>
+        </form>
+    </div>
+    <!--newsletter y redes. fin-->
+    <footer class="footer">
+        <p>
+            Nuestra redes, ¡seguinos para ver más!
+        </p>
+        <a href="https://www.youtube.com/channel/UC_YzbPvdYPynEwJyrAtBCWw/featured">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/todobavien">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/0znjkonvhv6kKO4NX04amM?si=6emO1B3yQ32H1y5ZMZiL3g">
+            <i class="fa-brands fa-spotify"></i>
+        </a>
+        <p>2022, derechos de autor reservados.</p> 
+        <p>Cuida el medio ambiente.</p> 
+    </footer>
+</body>
+</html>
