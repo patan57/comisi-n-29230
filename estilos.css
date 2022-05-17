@@ -13,11 +13,11 @@
     }
     
     .fondo{
-        height: 100%;
+        height: 100vh;
         background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
         color: white;
         font-family: "anotherdanger";
-        font-size: 50px;
+        font-size: 100px;
         text-align: center;
     }
     .contenedor{
@@ -27,7 +27,7 @@
         /* grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); */
         grid-template-rows: repeat(2, 1fr);
         font-family: "anotherdanger";
-        height:100%;
+        height:100vh;
         align-items:initial;
         color: red;
     }
@@ -73,11 +73,35 @@
         background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
         color: white;
         font-family: "anotherdanger";
+        font-size: 20px;
         display: grid;
         text-align: center;   
         list-style: none;
         text-decoration: none;
-        display: inline-block; 
+        display: inline-block;
+        animation: float 5s ease-in-out infinite; 
+    }
+
+    .fa-brands fa-youtube{
+        animation-delay: 1s;
+    }
+    .fa-brands fa-instagram{
+        animation-delay: 2s;
+    }
+    .fa-brands fa-spotify{
+        animation-delay: 3s;
+    }
+
+    @keyframes float {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-15px);
+        }
+        100%{
+            transform: translateY(0);
+        }
     }
     
     .footer :hover{
@@ -92,7 +116,7 @@
         color: red;
         font-family: "anotherdanger";
         font-size: 25px;
-        background-color: #790c34;
+        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
         
     }
     .cTodos{
@@ -111,7 +135,7 @@
         bottom: 100%;
         left: 0;
         right: 0;
-        background-color: #790c34;
+        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
         overflow: hidden;
         width: 100%;
         height: 0;
@@ -139,8 +163,22 @@
         display: flex;
         flex-wrap: wrap;
         flex: 1 1 100px;
+        padding:50px;
     }
-    
+
+
+    /* pagination starts */
+    .pagination{
+        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+    }
+
+    .pagination .page-item .page-link{
+        background-color: #000;
+        color: white;
+    }
+
+    /* pagination ends */
+
     /* Galeria starts */
 
     .container {
@@ -226,6 +264,10 @@
     }
 
     /* Galeria ends */
+
+    .fechasYFormularios{
+        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+    }
 }
 
 @media screen and (min-width:576px) {
