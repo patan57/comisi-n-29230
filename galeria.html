@@ -14,104 +14,53 @@
     <div>
         <h2 class="fondo">Galeria</h2>
     </div>
-    <main>
-        <div class="container">
-            <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="/img/image1.jpeg" style="width:100%">
-        </div>
+    <div class="grid-gallery">
+        <a class="grid-gallery__item" href="#">
+            <img class="grid-gallery__image" src="img/1.jpg">
+        </a>
+        <a class="grid-gallery__item" href="#">
+            <img class="grid-gallery__image" src="img/conpublico.jpg">
+        </a>
+        <a class="grid-gallery__item" href="#">
+            <img class="grid-gallery__image" src="img/image1.jpeg">
+        </a>
+        <a class="grid-gallery__item" href="#">
+            <img class="grid-gallery__image" src="img/tbvescenario2.jpeg">
+        </a>
+        <a class="grid-gallery__item" href="#">
+            <img class="grid-gallery__image" src="img/DSC_6139.jpg">
+        </a>
+        <a class="grid-gallery__item" href="#">
+            <img class="grid-gallery__image" src="img/tbvescenario3.jpeg">
+        </a>
+        <iframe class="grid-gallery__image" width="560" height="315" src="https://www.youtube.com/embed/1cWr73TsGjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="grid-gallery__image" width="560" height="315" src="https://www.youtube.com/embed/8xyZtyxGJKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="grid-gallery__image" width="560" height="315" src="https://www.youtube.com/embed/La01ff8xWyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="img/tbvescenario1.jpeg" style="width:100%">
-        </div>
+<div>
+    <div class="singles">
+        <h4>Singles</h4>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5W9GErEGHnWlMo0RKVkNHE?utm_source=generator&theme=0" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"><p class="textoAclaracionDiscografia">Año 2021</p></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5oJjPgaA7eSjWahbnSc4ph?utm_source=generator" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7j5ru172PqrfV8N0EsqN7g?utm_source=generator" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4lMa629sMGXd8OQ7b433BO?utm_source=generator" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/30P29mDNyzWryVnnKn8vRC?utm_source=generator" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>   
+</div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="img/tbvescenario2.jpeg" style="width:100%">
-        </div>
-            
-        <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="img/tbvescenario3.jpeg" style="width:100%">
-        </div>
+<div>
+    <div>
 
-        <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="img/todobavienicono.jpeg" style="width:100%">
-        </div>
-            
-        <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="img/image1.jpeg" style="width:100%">
-        </div>
-            
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-        <div class="row">
-            <div class="column">
-            <img class="demo cursor" src="img/image1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="">
-            </div>
-            <div class="column">
-            <img class="demo cursor" src="img/tbvescenario1.jpeg" style="width:100%" onclick="currentSlide(2)" alt="">
-            </div>
-            <div class="column">
-            <img class="demo cursor" src="img/tbvescenario2.jpeg" style="width:100%" onclick="currentSlide(3)" alt="">
-            </div>
-            <div class="column">
-            <img class="demo cursor" src="img/tbvescenario3.jpeg" style="width:100%" onclick="currentSlide(4)" alt="">
-            </div>
-            <div class="column">
-            <img class="demo cursor" src="img/todobavienicono.jpeg" style="width:100%" onclick="currentSlide(5)" alt="">
-            </div>    
-            <div class="column">
-            <img class="demo cursor" src="img/image1.jpeg" style="width:100%" onclick="currentSlide(6)" alt="">
-            </div>
-        </div>
-        </div>
-    </main>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-        </script>
+    </div>
+</div>
 
     <!-- div para cambio de páginas -->
     <div>
         <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="discografia.html">Anterior</a></li>
-            <li class="page-item"><a class="page-link" href="proximosconciertos.html
-                ">Siguiente</a></li>       
+            <li class="page-item"><a class="page-link" href="index.html">Inicio</a></li>
+            <li class="page-item"><a class="page-link" href="historia.html">Historia</a></li>
+            <li class="page-item"><a class="page-link" href="proximosconciertos.html">News</a></li>       
         </ul>
     </div>
 
@@ -120,15 +69,17 @@
         <p>
             Nuestra redes, ¡seguinos para ver mas!
         </p>
-        <a class= href="https://www.youtube.com/channel/UC_YzbPvdYPynEwJyrAtBCWw/featured">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://www.instagram.com/todobavien">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://open.spotify.com/artist/0znjkonvhv6kKO4NX04amM?si=6emO1B3yQ32H1y5ZMZiL3g">
-            <i class="fa-brands fa-spotify"></i>
-        </a>
+        <div class="fa-1x">
+            <a href="https://www.youtube.com/channel/UC_YzbPvdYPynEwJyrAtBCWw/featured">
+                <i class="fa-brands fa-youtube fa-flip" style="--fa-animation-duration: 3s;"></i>
+            </a>
+            <a href="https://www.instagram.com/todobavien">
+                <i class="fa-brands fa-instagram fa-flip" style="--fa-animation-duration:3s;"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/0znjkonvhv6kKO4NX04amM?si=6emO1B3yQ32H1y5ZMZiL3g">
+                <i class="fa-brands fa-spotify fa-flip" style="--fa-animation-duration:3s;"></i>
+            </a>
+        </div>    
         <p>2022, derechos de autor reservados.</p> 
         <p>Cuida el medio ambiente.</p> 
     </footer> 

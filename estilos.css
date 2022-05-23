@@ -1,1079 +1,231 @@
-*{
+* {
     margin: 0%;
-    padding:0%;
+    padding: 0%;
     border-radius: 0%;
     box-sizing: border-box;
 }
-/* pantallas extra grandes */
-@media screen and (min-width:320px){
 
-    @font-face {
-        font-family: "anotherdanger";
-        src: url(./fuentes/AnotherDanger.otf);
-    }
-    
-    .fondo{
-        height: 100vh;
-        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-        color: white;
-        font-family: "anotherdanger";
-        font-size: 100px;
-        text-align: center;
-    }
-    .contenedor{
-        border: 3px solid #000;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); */
-        grid-template-rows: repeat(2, 1fr);
-        font-family: "anotherdanger";
-        height:100vh;
-        align-items:initial;
-        color: red;
-    }
-    .contenedor :hover{
-        color: aliceblue;
-    }
-    .historiaGrid{
-        background-image:url(img/image1.jpeg);
-        border: 3px solid black;
-        padding: 50px;
-        font-size: 30px;
-        background-color: blue;
-        background-size: cover;
-    }
-    .discografiaGrid{
-        background-image:url(img/tbvescenario1.jpeg) ;
-        border: 3px solid black;
-        padding: 50px;
-        font-size: 30px;
-        background-size: cover;
-    }
-    .galeriaGrid{
-        background-image:url(img/tbvescenario2.jpeg) ;
-        border: 3px solid black;
-        padding: 50px;
-        font-size: 30px;
-        background-size: cover;
-    }
-    .proximosconciertosGrid{
-        background-image:url(img/tbvescenario3.jpeg) ;
-        border: 3px solid black;
-        padding: 50px;
-        font-size: 30px;
-        background-size: cover;
-    }
-
-    /* Footer en todas las html */
-
-    .footer{
-        height: 100%;
-        width: 100%;
-        background-color: violet;
-        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-        color: white;
-        font-family: "anotherdanger";
-        font-size: 20px;
-        display: grid;
-        text-align: center;   
-        list-style: none;
-        text-decoration: none;
-        display: inline-block;
-        animation: float 5s ease-in-out infinite; 
-    }
-
-    .fa-brands fa-youtube{
-        animation-delay: 1s;
-    }
-    .fa-brands fa-instagram{
-        animation-delay: 2s;
-    }
-    .fa-brands fa-spotify{
-        animation-delay: 3s;
-    }
-
-    @keyframes float {
-        0%{
-            transform: translateY(0);
-        }
-        50%{
-            transform: translateY(-15px);
-        }
-        100%{
-            transform: translateY(0);
-        }
-    }
-    
-    .footer :hover{
-        color: aliceblue;
-    }
-
-    /* Fin footer */
-    
-    /* Historia */
-
-    .historias{
-        color: red;
-        font-family: "anotherdanger";
-        font-size: 25px;
-        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-        
-    }
-    .cTodos{
-        position: relative;
-        width: 50%;
-    }
-    
-    .todosImg{
-        height: 50%;
-        width: 200%;
-        display: block;
-    }
-
-    .overlay{
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-    }
-
-    .cTodos:hover .overlay {
-        bottom: 0;
-        height: 100%;
-    }
-
-    .text{
-        white-space: pre-line; 
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        overflow: hidden;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-
-    .hCards{
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1 1 100px;
-        padding:50px;
-    }
-
-
-    /* pagination starts */
-    .pagination{
-        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    }
-
-    .pagination .page-item .page-link{
-        background-color: #000;
-        color: white;
-    }
-
-    /* pagination ends */
-
-    /* Galeria starts */
-
-    .container {
-        position: relative;
-    }
-    
-      /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-    
-      /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-        cursor: pointer;
-    }
-    
-      /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-    }
-    
-      /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-    
-      /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-      /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-    
-      /* Container for image text */
-    .caption-container {
-        text-align: center;
-        background-color: #222;
-        padding: 2px 16px;
-        color: white;
-    }
-    
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-      /* Six columns side by side */
-    .column {
-        float: left;
-        width: 16.66%;
-    }
-    
-      /* Add a transparency effect for thumnbail images */
-    .demo {
-        opacity: 0.6;
-    }
-    
-    .active,
-    .demo:hover {
-        opacity: 1;
-    }
-
-    /* Galeria ends */
-
-    .fechasYFormularios{
-        background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    }
-}
-
-@media screen and (min-width:576px) {
-    
 @font-face {
     font-family: "anotherdanger";
     src: url(./fuentes/AnotherDanger.otf);
 }
-/* pantallas grandes */
-.fondo{
-    height: 100px;
+
+.navbar navbar-expand-lg bg-light{
+    font-family: "anotherdanger";
+    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+}
+.navbar-brand{
+    font-family: "anotherdanger";
+    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+}
+
+.fondo {
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: white;
     font-family: "anotherdanger";
-    font-size: 50px;
-    text-align: center;
 }
-.contenedor{
-    border: 3px solid #000;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    font-family: "anotherdanger";
-    height:100vh;
-    align-items:initial;
-    color: red;
-}
-.contenedor :hover{
-    color: aliceblue;
-}
-.historiaGrid{
-    background-image:url(img/image1.jpeg);
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-color: blue;
-    background-size: cover;
-}
-.discografiaGrid{
-    background-image:url(img/tbvescenario1.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.galeriaGrid{
-    background-image:url(img/tbvescenario2.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.proximosconciertosGrid{
-    background-image:url(img/tbvescenario3.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.footer{
+
+
+/* Footer en todas las html */
+
+.footer {
     height: 100%;
     width: 100%;
     background-color: violet;
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: white;
     font-family: "anotherdanger";
+    font-size: 28px;
     display: grid;
-    text-align: center;   
+    text-align: center;
     list-style: none;
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
 }
 
-.footer :hover{
+.fa-brands fa-youtube {
+    animation-delay: 1s;
+}
+
+.fa-brands fa-instagram {
+    animation-delay: 2s;
+}
+
+.fa-brands fa-spotify {
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.footer :hover {
     color: aliceblue;
 }
 
-.container {
-    position: relative;
-}
+/* Fin footer */
 
-  /* Hide the images by default */
-.mySlides {
-    display: none;
-}
+/* Historia */
 
-  /* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-  /* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-  /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-  /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-  /* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-  /* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-  /* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
-/* .divGaleria{
-    height: 800px;
-    background-color: crimson;
-    display: grid;
-    padding: 20px;
-}
-
-
-.img1{ 
-    grid-column:1/2;
-    grid-row: 1/2;
-    background-color: white ;
-    background-size: cover;
-}
-
-.img2{
-    grid-column:2/3;
-    grid-row: 1/3 ;
-    background-color: blue ;
-    background-size: cover;
-}
-
-.video1{
-    grid-column:3/4;
-    grid-row: 1/2;
-    background-color: orange ;
-    background-size: cover;
-}
-.video2{
-    grid-column:1/2;
-    grid-row: 2/3;
-    background-color: pink ;
-    background-size: cover;
-}
-.video3{
-    grid-column:3/4;
-    grid-row: 2/3;
-    background-color: green ;
-    background-size: cover;
-} */
-}
-@media screen and (min-width:768px) {
-    
-@font-face {
-    font-family: "anotherdanger";
-    src: url(./fuentes/AnotherDanger.otf);
-}
-/* pantallas grandes */
-.fondo{
-    height: 100px;
-    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    color: white;
-    font-family: "anotherdanger";
-    font-size: 50px;
-    text-align: center;
-}
-.contenedor{
-    border: 3px solid #000;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    font-family: "anotherdanger";
-    height:100vh;
-    align-items:initial;
+.historias {
     color: red;
-}
-.contenedor :hover{
-    color: aliceblue;
-}
-.historiaGrid{
-    background-image:url(img/image1.jpeg);
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-color: blue;
-    background-size: cover;
-}
-.discografiaGrid{
-    background-image:url(img/tbvescenario1.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.galeriaGrid{
-    background-image:url(img/tbvescenario2.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.proximosconciertosGrid{
-    background-image:url(img/tbvescenario3.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.footer{
-    height: 100%;
-    width: 100%;
-    background-color: violet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    color: white;
-    font-family: "anotherdanger";
-    display: grid;
-    text-align: center;   
-    list-style: none;
-    text-decoration: none;
-    display: inline-block; 
+
 }
 
-.footer :hover{
-    color: aliceblue;
-}
-
-.container {
+.cTodos {
     position: relative;
+    width: 50%;
 }
 
-  /* Hide the images by default */
-.mySlides {
-    display: none;
+.todosImg {
+    height: 50%;
+    width: 200%;
+    display: block;
 }
 
-  /* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-  /* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
+.overlay {
     position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-  /* Position the "next button" to the right */
-.next {
+    bottom: 100%;
+    left: 0;
     right: 0;
-    border-radius: 3px 0 0 3px;
+    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
 }
 
-  /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.cTodos:hover .overlay {
+    bottom: 0;
+    height: 100%;
 }
 
-  /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-  /* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
+.text {
+    white-space: pre-line;
     color: white;
+    /* font-size: 5px; */
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-  /* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-  /* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-/* .divGaleria{
+.hCards {
     display: flex;
     flex-wrap: wrap;
-    background-color: crimson;
-    padding: 0 4px;
+    flex: 1 1 100px;
+    padding: 50px;
 }
 
-.divGaleria2{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
 
-.divGaleria2 img{
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.divGaleria2 iframe{
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-} */
-
-
-/* .img1{ 
-    grid-column:1/2;
-    grid-row: 1/2;
-    background-color: white ;
-    background-size: cover;
-}
-
-.img2{
-    grid-column:2/3;
-    grid-row: 1/3 ;
-    background-color: blue ;
-    background-size: cover;
-}
-
-.video1{
-    grid-column:3/4;
-    grid-row: 1/2;
-    background-color: orange ;
-    background-size: cover;
-}
-.video2{
-    grid-column:1/2;
-    grid-row: 2/3;
-    background-color: pink ;
-    background-size: cover;
-}
-.video3{
-    grid-column:3/4;
-    grid-row: 2/3;
-    background-color: green ;
-    background-size: cover;
-} */
-}
-@media screen and (min-width:992px) {
-    
-@font-face {
-    font-family: "anotherdanger";
-    src: url(./fuentes/AnotherDanger.otf);
-}
-/* pantallas grandes */
-.fondo{
-    height: 100px;
+/* pagination starts */
+.pagination {
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    color: white;
-    font-family: "anotherdanger";
-    font-size: 50px;
-    text-align: center;
 }
-.contenedor{
-    border: 3px solid #000;
+
+.pagination .page-item .page-link {
+    background-color: #000;
+    color: white;
+}
+
+/* pagination ends */
+
+.grid-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    grid-auto-flow: row dense;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+}
+
+@media all and (min-width: 320px) {
+    .grid-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (min-width: 768px) {
+    .grid-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .grid-gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+    grid-row: span 3;
+}
+
+.grid-gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.singles{
+    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af) ;
+    color: red;
     font-family: "anotherdanger";
-    height:100vh;
-    align-items:initial;
+}
+
+.news{
+    background-image: linear-gradient(to left, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: red;
 }
-.contenedor :hover{
-    color: aliceblue;
-}
-.historiaGrid{
-    background-image:url(img/image1.jpeg);
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-color: blue;
-    background-size: cover;
-}
-.discografiaGrid{
-    background-image:url(img/tbvescenario1.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.galeriaGrid{
-    background-image:url(img/tbvescenario2.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.proximosconciertosGrid{
-    background-image:url(img/tbvescenario3.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.footer{
-    height: 100%;
-    width: 100%;
-    background-color: violet;
+
+.fechasYFormularios {
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+    height: auto;
+    width: 400px;
+    margin: 5% auto;
+    padding: 30px;
+    box-sizing: border-box;
     color: white;
-    font-family: "anotherdanger";
-    display: grid;
-    text-align: center;   
-    list-style: none;
-    text-decoration: none;
-    display: inline-block; 
-}
-
-.footer :hover{
-    color: aliceblue;
-}
-
-.container {
-    position: relative;
-}
-
-  /* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-  /* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-  /* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-  /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-  /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-  /* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-  /* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-  /* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-/* .divGaleria{
-    height: 800px;
-    background-color: crimson;
-    display: grid;
-    padding: 20px;
-}
-
-
-.img1{ 
-    grid-column:1/2;
-    grid-row: 1/2;
-    background-color: white ;
-    background-size: cover;
-}
-
-.img2{
-    grid-column:2/3;
-    grid-row: 1/3 ;
-    background-color: blue ;
-    background-size: cover;
-}
-
-.video1{
-    grid-column:3/4;
-    grid-row: 1/2;
-    background-color: orange ;
-    background-size: cover;
-}
-.video2{
-    grid-column:1/2;
-    grid-row: 2/3;
-    background-color: pink ;
-    background-size: cover;
-}
-.video3{
-    grid-column:3/4;
-    grid-row: 2/3;
-    background-color: green ;
-    background-size: cover;
-} */
-}
-@media screen and (min-width:1220px) {
-    
-@font-face {
-    font-family: "anotherdanger";
-    src: url(./fuentes/AnotherDanger.otf);
-}
-/* pantallas grandes */
-.fondo{
-    height: 100px;
-    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    color: white;
-    font-family: "anotherdanger";
-    font-size: 50px;
-    text-align: center;
-}
-.contenedor{
-    border: 3px solid #000;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    font-family: "anotherdanger";
-    height:100vh;
-    align-items:initial;
-    color: red;
-}
-.contenedor :hover{
-    color: aliceblue;
-}
-.historiaGrid{
-    background-image:url(img/image1.jpeg);
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-color: blue;
-    background-size: cover;
-}
-.discografiaGrid{
-    background-image:url(img/tbvescenario1.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.galeriaGrid{
-    background-image:url(img/tbvescenario2.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.proximosconciertosGrid{
-    background-image:url(img/tbvescenario3.jpeg) ;
-    border: 3px solid black;
-    padding: 50px;
-    font-size: 30px;
-    background-size: cover;
-}
-.footer{
-    height: 100%;
-    width: 100%;
-    background-color: violet;
-    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    color: white;
-    font-family: "anotherdanger";
-    display: grid;
-    text-align: center;   
-    list-style: none;
-    text-decoration: none;
-    display: inline-block; 
-}
-
-.footer :hover{
-    color: aliceblue;
-}
-
-.container {
-    position: relative;
-}
-
-  /* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-  /* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-  /* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-  /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-  /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-  /* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-  /* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-  /* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-/* .divGaleria{
-    height: 800px;
-    background-color: crimson;
-    display: grid;
-    padding: 20px;
-}
-
-
-.img1{ 
-    grid-column:1/2;
-    grid-row: 1/2;
-    background-color: white ;
-    background-size: cover;
-}
-
-.img2{
-    grid-column:2/3;
-    grid-row: 1/3 ;
-    background-color: blue ;
-    background-size: cover;
-}
-
-.video1{
-    grid-column:3/4;
-    grid-row: 1/2;
-    background-color: orange ;
-    background-size: cover;
-}
-.video2{
-    grid-column:1/2;
-    grid-row: 2/3;
-    background-color: pink ;
-    background-size: cover;
-}
-.video3{
-    grid-column:3/4;
-    grid-row: 2/3;
-    background-color: green ;
-    background-size: cover;
-} */
 }
