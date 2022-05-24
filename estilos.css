@@ -10,19 +10,15 @@
     src: url(./fuentes/AnotherDanger.otf);
 }
 
-.navbar navbar-expand-lg bg-light{
-    font-family: "anotherdanger";
-    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-}
-.navbar-brand{
-    font-family: "anotherdanger";
-    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-}
-
 .fondo {
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: white;
     font-family: "anotherdanger";
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    font-size: 28px;
 }
 
 
@@ -35,7 +31,7 @@
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: white;
     font-family: "anotherdanger";
-    font-size: 28px;
+    font-size: 20px;
     display: grid;
     text-align: center;
     list-style: none;
@@ -80,50 +76,10 @@
 
 .historias {
     color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "anotherdanger";
     font-size: 25px;
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
 
-}
-
-.cTodos {
-    position: relative;
-    width: 50%;
-}
-
-.todosImg {
-    height: 50%;
-    width: 200%;
-    display: block;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-}
-
-.cTodos:hover .overlay {
-    bottom: 0;
-    height: 100%;
-}
-
-.text {
-    white-space: pre-line;
-    color: white;
-    /* font-size: 5px; */
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .hCards {
@@ -133,6 +89,7 @@
     padding: 50px;
 }
 
+/* historia ends */
 
 /* pagination starts */
 .pagination {
