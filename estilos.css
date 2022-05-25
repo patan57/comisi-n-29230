@@ -10,17 +10,21 @@
     src: url(./fuentes/AnotherDanger.otf);
 }
 
+@font-face {
+    font-family:"iknowaghost" ;
+    src: url(./fuentes/iknowaghost.ttf);
+}
+
 .fondo {
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: white;
     font-family: "anotherdanger";
     display: flex;
-    justify-content: center;
-    align-items:center;
+    /* justify-content: center;
+    align-items:center; */
     flex-wrap: wrap;
     font-size: 28px;
 }
-
 
 /* Footer en todas las html */
 
@@ -76,10 +80,15 @@
 
 .historias {
     color: red;
-    font-family: "anotherdanger";
-    font-size: 25px;
+    font-family: "iknowaghost";
+    font-size: 35px;
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
+}
 
+.lead{
+    font-family: "iknowaghost";
+    font-size: 25px;
+    color: white;
 }
 
 .hCards {
@@ -97,8 +106,9 @@
 }
 
 .pagination .page-item .page-link {
-    background-color: #000;
+    background-image: linear-gradient(to left, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: white;
+    font-family: "iknowaghost";
 }
 
 /* pagination ends */
@@ -169,12 +179,13 @@
 .singles{
     background-image: linear-gradient(to right, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af) ;
     color: red;
-    font-family: "anotherdanger";
+    font-family: "iknowaghost";
 }
 
 .news{
     background-image: linear-gradient(to left, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: red;
+    font-family: "iknowaghost";
 }
 
 .fechasYFormularios {
