@@ -182,7 +182,7 @@
     font-family: "iknowaghost";
 }
 
-.news{
+.container-fluid{
     background-image: linear-gradient(to left, #070104, #210d17, #381121, #501128, #6a0f2d, #790c34, #88073c, #970044, #9a0058, #960072, #87008f, #6409af);
     color: red;
     font-family: "iknowaghost";
@@ -196,4 +196,6 @@
     padding: 30px;
     box-sizing: border-box;
     color: white;
+    resize: both;
+    overflow: auto;
 }
